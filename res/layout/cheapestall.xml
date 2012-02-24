@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="18dp" >
+
+            <ToggleButton
+                android:id="@+id/CheapListTButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5" 
+                android:textOn="List"
+                android:textOff="List"/>
+
+            <ToggleButton
+                android:id="@+id/CheapMapTButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:textOn="Map"
+                android:textOff ="Map"
+                /> 
+
+        </LinearLayout>
+
+        <ViewSwitcher
+            android:id="@+id/cheapViewSwitcher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/linearLayout1" >
+
+            <ListView
+                android:id="@+id/cheapAllListView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+            </ListView>
+            
+            <com.google.android.maps.MapView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/closeeventallmapview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clickable="true"
+    android:apiKey="0FDARoZO0Un3xNZPieYxQixeV1n3kgiuBUC4MNg"
+	/> 
+
+        </ViewSwitcher>
+
+        
+
+    </RelativeLayout>
+    

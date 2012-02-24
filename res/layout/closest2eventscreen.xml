@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout android:id="@+id/relativeLayout1" android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+        <TextView android:id="@+id/textView1" android:layout_height="wrap_content" android:text="TextView" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_width="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentRight="true"></TextView>
+        <ListView android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/closestEventDirectionsListView" android:layout_alignParentLeft="true" android:layout_below="@+id/textView1" android:layout_above="@+id/closestEventButton"></ListView>
+        <Button android:layout_height="wrap_content" android:id="@+id/closestEventMapButton" android:layout_width="wrap_content" android:text="View Map" android:layout_alignParentBottom="true" android:layout_alignParentRight="true" android:layout_alignParentLeft="true"></Button>
+    </RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="parking.direct"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="7" android:targetSdkVersion="8"/>
+
+    <application android:icon="@drawable/parkingdirect" android:label="@string/app_name" android:name="GlobalVariables" android:debuggable="true">
+        <activity android:name=".ParkingDirectActivity" android:label="@string/app_name"
+          			android:theme="@android:style/Theme.NoTitleBar">
+  		</activity>
+        
+        <activity android:name=".ClosesToEvent"></activity>
+        <activity android:name=".ClosesToMeActivity"></activity>
+        <activity android:name=".CheapestActivity"></activity>
+        
+        <activity android:name=".CheapestAllActivity"></activity>
+        <activity android:name=".ClosestEventAllActivity"></activity>
+        <activity android:name=".ClosestMeAllActivity"></activity>    
+            
+        <activity android:name=".GoogleMap">
+        
+        </activity>
+        <activity android:name = ".SplashScreen">
+        	<intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        
+        </activity>
+        <uses-library android:name="com.google.android.maps" android:theme="@android:style/Theme.NoTitleBar" />
+    </application>
+  	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+  	<uses-permission android:name="android.permission.ACCESS_GPS" /> 
+  	<uses-permission android:name="android.permission.ACCESS_LOCATION" />
+  	
+
+</manifest>
